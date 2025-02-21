@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Effect</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/the-amazing-spider-man" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Lexend+Mega:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73db03bb2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+   
+    <div class="section banner" id="sec1">
+        <div class="s1b1">
+            <h1>
+                <span>V</span>
+                <span>i</span>
+                <span>n</span>
+                <span>i</span>
+                <span>t</span>
+                <span>K</span>
+                <span>u</span>
+                <span>m</span>
+                <span>a</span>
+                <span>r</span>
+                <span>L</span>
+                <span>u</span>
+                <span>n</span>
+                <span>i</span>
+                <span>a</span>
+            </h1>
+          
+        </div>
+        <canvas id="dotsCanvas"></canvas>
+
+        <i id="scrollArrow" ></i>
+
+    </div>
+
+    <!-- ========================heading============== -->
+
+    <!-- <div id="sections-container"> -->
+
+    <div id="up-arrow">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+
+    <div id="sec2">
+        <div class="nuclear-bg">
+
+            <div class="nucleus"></div>
+
+            <div class="electron-orbit" style="width: 100px; height: 100px; animation-duration: 4s;">
+                
+            </div>
+
+
+            <div class="electron-orbit"
+                style="width: 150px; height: 150px; animation-duration: 6s; transform: rotateX(60deg) rotateY(30deg);">
+               
+            </div>
+
+            <div class="electron-orbit"
+                style="width: 200px; height: 200px; animation-duration: 8s; transform: rotateX(70deg);">
+                
+            </div>
+
+        </div>
+        <div class="container">
+
+
+
+            <nav>
+
+                <h2><span>Vinit</span>KumarLunia..</h2>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <ul id="sidemenu">
+                    <li><a href="#sec2">Intro</a></li>
+                    <li><a href="#sec3">About</a></li>
+                    <li><a href="#sec4">My Skills</a></li>
+                    <li> <a href="#sec5">Projects</a></li>
+                    <li> <a href="#sec6">Contact-me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+
+            </nav>
+
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm a <span id="name"></span><br> From Banasthali</h1>
+            </div>
+            <div class="Social-icons">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </div>
+    <!-- ============================intro============================= -->
+
+    <div id="sec3">
+        <div class="row">
+            <div class="column1"  data-aos="fade-right">
+                <img src="./images/vinit.jpg" alt="">
+            </div>
+            <div class="column2">
+                <div class="abt-info ">
+                    <h2 class="with-line">About</h2>
+                    <p class="abt-info-para"  data-aos="fade-left"><b>MERN Stack Developer</b>
+                        <br><br>
+                        Results-driven MERN stack developer with hands-on experience in building responsive, scalable web applications. Proficient in developing full-stack solutions using MongoDB, Express.js, React.js, and Node.js. Skilled in API development, database management, and implementing user authentication and session management. Passionate about delivering clean, maintainable code and optimizing user experience across devices.</p>
+                    <a href="./My_Resume.pdf" download class="btn-cv">Download CV</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="abt-ex-edu">
+            <div class="abt-ex">
+                <h1>Expirence</h1>
+                <div class="dot-bullet1"></div>
+                <div class="abt-ex-info">
+                    <h2>Groot Acadmy</h2>
+                    <h3>MERN STACK DEVELOPER</h3>
+                    <h4>July 2023 - PRESENT</h4>
+                    <p><b>Groot Academy | 6 Months</b>
+                        <br><br>
+                        Completed an intensive 6-month course focused on full-stack web development using MongoDB, Express.js, React.js, and Node.js. Gained practical experience through hands-on projects, including building RESTful APIs, managing databases, and developing responsive web applications.</p>
+                </div>
+                <div class="dot-bullet2"></div>
+                <div class="abt-ex-info">
+                    <h2>Omko</h2>
+                    <h3>Frontend Designer</h3>
+                    <h4>July 2024 - PRESENT</h4>
+                    <ul>
+                        
+                       <li>Developed and optimized responsive web interfaces using HTML, CSS, and    JavaScript, enhancing user experience across desktop and mobile platforms.
+                    </li>
+                       <li>
+                       Collaborated with the design and development teams to implement pixel-perfect UI/UX designs aligned with brand guidelines.
+                    </li>
+                       <li>
+                        Integrated modern design trends and technologies to improve website performance and aesthetics.
+                    </li>
+                       <li>
+                       Conducted usability testing and implemented feedback to improve overall functionality and user engagement.
+                    </li></ul>
+                </div>
+
+            </div>
+            <div class="abt-edu">
+                <h1>Education</h1>
+                <div class="dot-bullet3"></div>
+                <div class="abt-ex-info">
+                    <h2>Shankuntalam In Banasthali University</h2>
+                    <h3>School</h3>
+                    <h4>July 2009 To 2017 - PRESENT</h4>
+                    <p>I completed my school  Shankuntalam In Banasthali University</p>
+                </div>
+                <div class="dot-bullet4"></div>
+                <div class="abt-ex-info">
+                    <h2>Vidhyasthali Management Of Technology College</h2>
+                    <h3>Bachelor Of Science</h3>
+                    <h4>July 2017 To 2021 - PRESENT</h4>
+                    <p>
+                        Vidhyasthali Management of Technology College
+                        <br><br>
+                        Bachelor of Science (B.Sc.) – Physics, Chemistry, Mathematics
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================end of sec3============================= -->
+
+    <div id="sec4">
+        <div class="sec4-container">
+        <div class="skill-info">
+            
+            <div class="skill-dot-bullet1"></div>
+            <h1>My-Skills</h1>
+            <div class="skills">
+                <div class="skill-icon">
+                <ul>
+                    <li>
+                        <img src="./images/html.svg" alt="">
+                        <h3>HTML</h3>
+                    </li>
+                    <li>
+                        <img src="./images/css.svg" alt="">
+                        <h3>CSS</h3>
+                    </li>
+                    <li>
+                        <img src="./images/javascript.svg" alt="">
+                        <h3>JAVASCRIPT</h3>
+                    </li>
+                    <li>
+                        <img src="./images/react.svg" alt="">
+                        <h3>REACT JSS</h3>
+
+                    </li>
+                    <li>
+                        <img src="./images/boot.png" alt="">
+                        <h3>BOOTSTRAP</h3>
+
+                    </li>
+                    <li>
+                        <img src="./images/tailwind.png" alt="">
+                        <h3>TAILWIND CSS</h3>
+
+                    </li>
+                    <li>
+                        <img src="./images/nodejs.svg" alt="">
+                        <h3>NODE JS</h3>
+                    </li>
+                    <li>
+                        <img src="./images/EX.png" alt="">
+                        <h3>EXPRESS JS</h3>
+                    </li>
+                    <li>
+                        <img src="./images/mgdb.png" alt="">
+                        <h3>MONGODB</h3>
+                    </li>
+
+
+                </ul>
+            </div>
+                <div class="skill-para">
+                    <ul>
+                        <li>MERN Stack: Proficient in MongoDB, Express.js, React.js, and Node.js for full-stack web development.</li>
+                        <li>Frontend: Expertise in building responsive user interfaces with React, Bootstrap, and Tailwind CSS.</li>
+                        <li>Backend: Skilled in developing RESTful APIs and server-side applications using Node.js and Express.js.</li>
+                        <li>Database: Experience in designing and managing databases with MongoDB and Mongoose.</li>
+                        <li>Tools: Git, GitHub, Postman, npm, VS Code.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skill-dot-bullet2"></div>
+    </div>
+</div>
+
+    <!-- ================================== end of sec4 =============================== -->
+
+
+    <div id="sec5">
+        <div class="work-dot-bullet"></div>
+        <div class="container1">
+
+            <h1 class="sub-title">My-Work</h1>
+            <p class="para">Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/wp8406418-4k-vertical-spider-man-wallpapers.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum sint animi
+                            dicta totam? Eaque architecto cum aperiam dolorum ipsa, dolore consequatur dignissimos vero
+                            ea officia fugit sed voluptas consectetur.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/wp4319794-spider-man-far-from-home-4k-wallpapers.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum sint animi
+                            dicta totam? Eaque architecto cum aperiam dolorum ipsa, dolore consequatur dignissimos vero
+                            ea officia fugit sed voluptas consectetur.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/wp8406261-4k-vertical-spider-man-wallpapers.jpg" alt="">
+                    <div class="layer">
+                        <h3>Food App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum sint animi
+                            dicta totam? Eaque architecto cum aperiam dolorum ipsa, dolore consequatur dignissimos vero
+                            ea officia fugit sed voluptas consectetur.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/wp8406261-4k-vertical-spider-man-wallpapers.jpg" alt="">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nostrum sint animi
+                            dicta totam? Eaque architecto cum aperiam dolorum ipsa, dolore consequatur dignissimos vero
+                            ea officia fugit sed voluptas consectetur.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ================================end of sec5======================== -->
+
+    <div id="sec6">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact-Me</h1>
+                    <p><i class="fas fa-paper-plane "></i> vinitlunia35@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>91+ 8824866611</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="./My_Resume.pdf" download class="btn btn2 download"><i
+                            class="fa-solid fa-circle-down"></i>Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 ">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>COPYRIGHT © VINIT. ALL RIGHTS RESERVED <i class="fa-solid fa-star"></i></p>
+        </div>
+    </div>
+    
+<!-- </div> -->
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
