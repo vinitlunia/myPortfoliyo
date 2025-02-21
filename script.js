@@ -22,28 +22,27 @@ document.getElementById("scrollArrow").addEventListener("click", function () {
 
 
 
-let isScrolling = false;
+// let isScrolling = false;
 
-window.addEventListener('wheel', (event) => {
-    // Prevent default scroll behavior
-    // event.preventDefault()
+// window.addEventListener('wheel', (event) => {
+   
 
-    if (!isScrolling) {
-        isScrolling = true;
+//     if (!isScrolling) {
+//         isScrolling = true;
 
-        // Check if scrolling down (event.deltaY > 0) or up (event.deltaY < 0)
-        if (event.deltaY > 0) {
-            // Scroll down: move sec1 up to reveal sec2
-            document.getElementById('sec1').style.transform = 'translateY(-100vh)';
-        } 
+//         // Check if scrolling down (event.deltaY > 0) or up (event.deltaY < 0)
+//         if (event.deltaY > 0) {
+//             // Scroll down: move sec1 up to reveal sec2
+//             document.getElementById('sec1').style.transform = 'translateY(-100vh)';
+//         } 
        
 
-        // Allow another scroll after the transition is complete
-        setTimeout(() => {
-            isScrolling = false;
-        }, 500); // The delay matches the transition time (0.5s)
-    }
-});
+//         // Allow another scroll after the transition is complete
+//         setTimeout(() => {
+//             isScrolling = false;
+//         }, 500); // The delay matches the transition time (0.5s)
+//     }
+// });
 
 
 
@@ -66,8 +65,8 @@ function setParameters() {
     const width = window.innerWidth;
 
     if (width < 768) { // Mobile
-        dotCount = 50;
-        maxSpeed = 0.6;
+        dotCount = 80;
+        maxSpeed = 0.9;
         connectionDistance = 150;
     } else if (width < 1024) { // Tablet
         dotCount = 70;
