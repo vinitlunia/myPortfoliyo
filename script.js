@@ -1,17 +1,4 @@
-// window.addEventListener('scroll', () => {
-//     const sec1 = document.getElementById('sec1');
-//     const sec2 = document.getElementById('sec2');
-    
-//     const scrollPosition = window.scrollY;
-//     const windowHeight = window.innerHeight;
 
-//     // Hide `sec1` once scrolled past
-//     if (scrollPosition >= windowHeight) {
-//         // sec1.classList.add('hidden'); // Apply the hidden class
-//         sec1.style.transform = `translateY(-100vh)`;
-//         sec2.style.transform = `translateY(0)`;
-//     }
-// });
 
 document.getElementById("scrollArrow").addEventListener("click", function () {
     const nextSection = document.getElementById("sec2");
@@ -21,28 +8,6 @@ document.getElementById("scrollArrow").addEventListener("click", function () {
 
 
 
-
-// let isScrolling = false;
-
-// window.addEventListener('wheel', (event) => {
-   
-
-//     if (!isScrolling) {
-//         isScrolling = true;
-
-//         // Check if scrolling down (event.deltaY > 0) or up (event.deltaY < 0)
-//         if (event.deltaY > 0) {
-//             // Scroll down: move sec1 up to reveal sec2
-//             document.getElementById('sec1').style.transform = 'translateY(-100vh)';
-//         } 
-       
-
-//         // Allow another scroll after the transition is complete
-//         setTimeout(() => {
-//             isScrolling = false;
-//         }, 500); // The delay matches the transition time (0.5s)
-//     }
-// });
 
 
 
@@ -210,6 +175,32 @@ window.addEventListener('resize', () => {
     setParameters();
     initDots();
 });
+
+
+// Handle touch interaction for mobile and tablet
+container.addEventListener('touchmove', (event) => {
+    const rect = container.getBoundingClientRect();
+    const touch = event.touches[0];
+    if (touch) {
+        mousePosition.x = touch.clientX - rect.left;
+        mousePosition.y = touch.clientY - rect.top;
+    }
+});
+
+container.addEventListener('touchstart', (event) => {
+    const rect = container.getBoundingClientRect();
+    const touch = event.touches[0];
+    if (touch) {
+        mousePosition.x = touch.clientX - rect.left;
+        mousePosition.y = touch.clientY - rect.top;
+    }
+});
+
+container.addEventListener('touchend', () => {
+    mousePosition.x = null;
+    mousePosition.y = null;
+});
+
 
 
 
